@@ -7,15 +7,18 @@ const ingredients = [
   "Condiments",
 ];
 
-const ingridientsContainerEl = document.querySelector("ul");
-const creatUl = ingredients.map((ingridient) => {
+const ingridientContainer = document.querySelector("ul");
+
+const createUl = ingredients.map((ingridient) => {
   const liEl = document.createElement("li");
   liEl.classList.add("item");
   liEl.textContent = ingridient;
 
+  console.log(liEl);
   return liEl;
 });
 
-console.log(creatUl);
+ingridientContainer.append(...createUl);
 
-ingridientsContainerEl.append(...creatUl);
+console.log(createUl);
+
