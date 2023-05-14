@@ -1,4 +1,4 @@
-// !  Variant 2 =============
+// !  Variant 1 =============
 
 let counterValue = 0;
 
